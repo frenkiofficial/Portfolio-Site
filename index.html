@@ -1,1 +1,71 @@
+<!-- Created by Frenki -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Watermark: Frenki -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frenki's Profile - Interactive JSON View</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Developed by Frenki -->
+</head>
+<body>
+    <!-- Wrapper by Frenki -->
+    <div class="main-content-wrapper">
+        <!-- Page Header - Frenki -->
+        <header class="page-header">
+            <div class="header-content">
+                 <i class="fas fa-terminal header-icon"></i>
+                <h1>Frenki</h1>
+                <p>Technology & Business Profile - JSON View</p>
+            </div>
+        </header>
 
+        <!-- Main Card - Frenki -->
+        <div class="card" id="resume-card">
+            <div class="card-header">
+                <i class="far fa-file-code icon"></i>
+                <span class="filename">resume.json</span>
+                <i class="fas fa-sync-alt icon" id="reload-icon" title="Reload Data"></i>
+            </div>
+            <div class="card-body">
+                <!-- Loading Indicator - Frenki -->
+                <div class="loading-indicator" id="loading">
+                    <div class="spinner"></div>
+                    <span>Loading data...</span>
+                </div>
+                <!-- JSON Content Area - Frenki -->
+                <pre><code id="json-content"></code></pre>
+            </div>
+            <!-- Copy Notification - Frenki -->
+            <div id="copy-notification" class="copy-notification">Copied!</div>
+        </div>
+        <!-- End Card - Frenki -->
+    </div> <!-- End Wrapper - Frenki -->
+
+    <!-- Footer Section - Frenki -->
+    <footer class="site-footer">
+        <div class="social-links">
+            <!-- Footer links direct to accounts - Frenki -->
+            <a href="https://github.com/frenkiofficial" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/officialfrenki" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://fiverr.com/frenkimusic" target="_blank" rel="noopener noreferrer" title="Fiverr"><i class="fas fa-briefcase"></i></a>
+            <a href="https://t.me/FrenkiOfficial" target="_blank" rel="noopener noreferrer" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://huggingface.co/frenkiofficial" target="_blank" rel="noopener noreferrer" title="Hugging Face"><i class="fas fa-brain"></i></a>
+        </div>
+        <p class="copyright">© <span id="copyright-year"></span> Frenki. All rights reserved.</p>
+    </footer>
+    <!-- End Footer - Frenki -->
+
+    <!-- Chatbot Elements Removed by Frenki -->
+    <!-- <button id="chatbot-fab" ...></button> -->
+    <!-- <div id="chat-modal" ...></div> -->
+
+    <!-- Libraries - Frenki -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="script.js"></script>
+    <!-- HTML Structure by Frenki -->
+</body>
+</html>
+<!-- End of HTML file by Frenki -->
