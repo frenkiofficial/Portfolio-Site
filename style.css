@@ -1,0 +1,85 @@
+/* Stylesheet created by Frenki */
+
+/* Reset dasar & gaya global - Frenki */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+/* Body styles by Frenki */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #0f302b 0%, #1a4d3b 50%, #1dd1a1 100%); color: #e8f5e9; overflow-x: hidden; display: flex; flex-direction: column; min-height: 100vh; }
+/* Wrapper styles by Frenki */
+.main-content-wrapper { width: 100%; max-width: 800px; margin: 0 auto; padding: 40px 20px 0 20px; flex-grow: 1; display: flex; flex-direction: column; align-items: center; }
+
+/* Header Styles - Frenki */
+.page-header { width: 100%; margin-bottom: 40px; text-align: center; color: #ffffff; opacity: 0; transform: translateY(-20px); animation: headerLoad 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; animation-delay: 0.1s; }
+@keyframes headerLoad { to { opacity: 1; transform: translateY(0); } }
+.page-header .header-content { background: rgba(26, 77, 59, 0.6); padding: 25px 30px; border-radius: 12px; border: 1px solid rgba(129, 199, 132, 0.2); backdrop-filter: blur(8px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); display: inline-block; position: relative; }
+.page-header .header-icon { font-size: 2em; color: #1de9b6; margin-bottom: 10px; display: block; }
+.page-header h1 { font-size: 2.2em; font-weight: 600; margin-bottom: 5px; letter-spacing: 1px; text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
+.page-header p { font-size: 1.1em; color: #c8e6c9; font-weight: 300; opacity: 0.9; }
+/* End Header Styles - Frenki */
+
+/* Card Styles - Frenki */
+.card { background-color: rgba(26, 77, 59, 0.88); border-radius: 15px; padding: 30px; width: 100%; max-width: 750px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(129, 199, 132, 0.25); position: relative; overflow: hidden; opacity: 0; transform: scale(0.98) translateY(10px); animation: cardLoad 0.7s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; animation-delay: 0.4s; margin-bottom: 40px; }
+@keyframes cardLoad { to { opacity: 1; transform: scale(1) translateY(0); } }
+/* End Card Styles - Frenki */
+
+/* Card Internals - Frenki */
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid rgba(165, 214, 167, 0.25); color: #c8e6c9; font-size: 0.9em; }
+.card-header .filename { font-weight: 500; color: #e8f5e9; }
+.card-header .icon { cursor: pointer; transition: color 0.2s ease, transform 0.3s ease; }
+.card-header .icon:hover { color: #a5d6a7; transform: scale(1.1); }
+#reload-icon:active { transform: scale(1.1) rotate(180deg); transition: transform 0.3s ease-in-out; }
+.loading-indicator { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 50px 0; min-height: 150px; color: #a5d6a7; }
+.spinner { border: 4px solid rgba(165, 214, 167, 0.3); border-left-color: #81c784; border-radius: 50%; width: 35px; height: 35px; animation: spin 1s linear infinite; margin-bottom: 15px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.card-body { position: relative; }
+.card-body pre { background-color: transparent; padding: 0; margin: 0; font-family: 'Fira Code', 'Consolas', 'Menlo', 'Courier New', monospace; font-size: 0.95em; line-height: 1.7; }
+.card-body code { display: block; padding: 5px 10px; min-height: 150px; transition: opacity 0.5s ease; white-space: pre-wrap; overflow-wrap: break-word; }
+/* End Card Internals - Frenki */
+
+/* JSON Syntax Highlighting - Frenki */
+.json-key { color: #80cbc4; }
+.json-string { color: #ffe082; }
+.json-boolean { color: #f06292; }
+.json-punctuation { color: #b0bec5; }
+/* End JSON Syntax - Frenki */
+
+/* JSON Link & Copy Icon (Inside Code) - Frenki */
+.json-link { color: #90caf9; text-decoration: none; cursor: pointer; border-bottom: 1px dotted rgba(144, 202, 249, 0.7); transition: color 0.2s ease, border-color 0.2s ease; }
+.json-link:hover { color: #e3f2fd; border-bottom-color: rgba(227, 242, 253, 0.9); }
+.copy-icon { font-size: 0.8em; margin-left: 8px; color: #b0bec5; cursor: pointer; transition: color 0.2s ease, transform 0.2s ease; display: inline-block; vertical-align: middle; }
+.copy-icon:hover { color: #ffffff; transform: scale(1.2) translateY(-1px); }
+/* End JSON Link & Copy - Frenki */
+
+/* Copy Notification Styles - Frenki */
+.copy-notification { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); background-color: #1de9b6; color: #0f302b; padding: 8px 15px; border-radius: 5px; font-size: 0.9em; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; z-index: 10; }
+.copy-notification.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(-10px); }
+/* End Copy Notification - Frenki */
+
+/* TypeIt Cursor Styling - Frenki */
+.ti-cursor { display: inline-block; color: #1dd1a1; margin-left: 1px; font-weight: bold; animation: blink 0.8s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+/* End TypeIt - Frenki */
+
+/* Footer Styles - Frenki */
+.site-footer { width: 100%; max-width: 800px; margin: 0 auto; text-align: center; padding: 25px 20px; border-top: 1px solid rgba(165, 214, 167, 0.2); color: #a5d6a7; margin-top: auto; }
+.copyright { margin-top: 18px; font-size: 0.9em; opacity: 0.8; }
+/* End Footer Styles - Frenki */
+
+/* Social Links Styling (No Copy Icon) - Frenki */
+.social-links { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px 25px; }
+.social-links a { color: #c8e6c9; font-size: 1.8em; transition: color 0.3s ease, transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); display: inline-block; }
+.social-links a:hover { color: #ffffff; transform: translateY(-4px) scale(1.1); }
+/* End Social Links - Frenki */
+
+/* Chatbot Styles Removed by Frenki */
+/* .chatbot-fab { ... } */
+/* .chat-modal { ... } */
+/* .chat-header { ... } */
+/* .close-chat-btn { ... } */
+/* .chat-messages { ... } */
+/* .message { ... } */
+/* .chat-input-area { ... } */
+/* #chat-input { ... } */
+/* #send-chat-btn { ... } */
+
+/* End of Stylesheet by Frenki */
