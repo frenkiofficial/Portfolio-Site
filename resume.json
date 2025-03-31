@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "data": {
+    "name": "Frenki",
+    "field": "Bot & AI Developer | Web & Blockchain Developer | Digital Automation",
+    "specialties": [
+      "Telegram Bots",
+      "AI for Business",
+      "Web & DApp Development",
+      "Web Scraping",
+      "Trading Automation"
+    ],
+    "about_me": "I am a technology developer specializing in smart bots, business AI, digital automation, and web & blockchain development. With expertise in Telegram bots, web scraping, AI systems, and Web3 & DApp development, I help businesses and individuals leverage advanced technology to improve operational efficiency.\n\nIn addition to developing bot and AI-based solutions, I also have experience in building modern websites, Web3-based applications, and Decentralized Applications (DApps) that integrate blockchain technology.",
+    "core_skills": [
+      "Telegram Bots & AI Chatbots – Enhancing customer service with intelligent and responsive bots.",
+      "Web Scraping & Automation – Utilizing Selenium & Python to extract real-time data from various sources.",
+      "Trading Bots & Data Analytics – Developing trading analysis bots that gather data from 10+ websites automatically.",
+      "Google Sheets & Business Automation – Creating automated cloud-based financial and business management systems.",
+      "Website Development – Building modern, responsive, and functional websites using various technologies.",
+      "Blockchain & Web3 Development – Developing DApps, smart contracts, and Web3-based applications with blockchain integration.",
+      "VPS & Linux Management – Running server-based applications with optimal performance."
+    ],
+    "technologies": [
+      "Python", "Node.js", "JavaScript",
+      "Selenium", "Scrapy",
+      "Telegram Bot API", "Google Cloud",
+      "Hugging Face", "Gemini AI",
+      "React", "Next.js", "Tailwind CSS",
+      "Solidity", "Web3.js", "Smart Contracts",
+      "Linux", "VPS Ubuntu"
+    ],
+    "freelance_info": "I am also active on Fiverr, offering Telegram bot, trading bot, website development, and blockchain solutions for global clients with unlimited revisions & a 1-year warranty.",
+    "accounts": {
+      "github": "https://github.com/frenkiofficial",
+      "huggingface": "https://huggingface.co/frenkiofficial",
+      "telegram": "https://t.me/FrenkiOfficial",
+      "twitter": "https://twitter.com/officialfrenki",
+      "fiverr": "https://fiverr.com/frenkimusic"
+    },
+    "contact_note": "I am open to collaboration and technology-based projects. If you're interested, feel free to contact me!"
+  }
+}
